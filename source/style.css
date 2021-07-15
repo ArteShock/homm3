@@ -1,0 +1,412 @@
+@font-face {
+  font-family: 'Heroes';
+  src: url(fonts/kingthings.ttf);
+}
+
+body{
+  margin: 0px;
+  background-image: url(advmapfill.jpg);
+  font-family: Heroes;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  padding: 10px;
+  background-image:url(mainfill.jpg);
+  background-color:royalblue; 
+}
+.navigation{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  margin: 5px;
+  background-color: hsla(0, 0%, 100%, 0.5);
+  height: 50px;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 2fr 7fr 2fr;
+}
+.cont1{
+  grid-column-start:1;
+  background-color:hsla(0, 0%, 100%, 0.5);
+  margin: 5px;
+  height: 100px;
+  
+}
+.cont2{
+  grid-column-start:2;
+  background-color:hsla(0, 0%, 100%, 0.5);
+  margin: 5px;
+}
+.cont3{
+  grid-column-start:3;
+  background-color:hsla(0, 0%, 100%, 0.5);
+  margin: 5px;
+}
+.footer{
+  background-color:hsla(0, 0%, 100%, 0.5);
+  margin-top: 5px;
+  height: 100px;
+}
+.logo{
+  height: 100%; 
+}
+.content{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-start: 2;
+  background-color:hsla(0, 0%, 100%, 0.5);
+  margin: 5px;
+}
+.cities-img{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end ;
+  position: relative;
+  z-index: 0;
+  color: #fff;
+  grid-column-start: 1;
+  background-color:black;
+  margin:5px;
+}
+.cities-img img{
+  width: 100%;
+}
+.heroes-img{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end ;
+  position: relative;
+  z-index: 0;
+  color: #fff;
+  grid-column-start: 2;
+  background-color:black;
+  margin:5px;
+}
+.heroes-img img{
+  width: 100%;
+}
+.units-img{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end ;
+  position: relative;
+  z-index: 0;
+  color: #fff;
+  grid-column-start: 3;
+  background-color:black;
+  margin:5px;
+}
+.units-img img{
+  width: 100%;
+}
+
+
+.cities-img p{
+  position: absolute;
+  text-align: center;
+  z-index: -1;
+  font-size: 2.2em;
+}
+.heroes-img p{
+  position: absolute;
+  text-align: center;
+  z-index: -1;
+  font-size: 2.2em;
+}
+.units-img p{
+  position: absolute;
+  text-align: center;
+  z-index: -1;
+  font-size: 2.2em;
+}
+
+@keyframes textup {
+  0%{
+    opacity:1;
+  }
+  100%{
+    opacity:0.3;
+  }
+}
+
+.cities-img img:hover{
+  animation: textup 1s;
+  opacity:0.3;
+}
+.heroes-img img:hover{
+  animation: textup 1s;
+  opacity: 0.3;
+}
+.units-img img:hover{
+  animation: textup 1s;
+  opacity: 0.3;
+}
+.nav{
+  margin: 5px;
+  background-color: rbga(0,0,0,0);
+
+}
+.nav:hover{
+  background: linear-gradient(180deg,rgba(83, 83, 83,0),rgba(0, 0, 0, 0.3));
+}
+.nav p{
+  margin: 0px;
+  font-size: 1.7em;
+}
+.nav a{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.nav1{
+  grid-column: 1;
+}
+.nav2{
+  grid-column: 2;
+}
+.nav3{
+  grid-column: 3;
+}
+.nav4{
+  grid-column: 4;
+}
+.nav5{
+  grid-column: 5;
+}
+.nav6{
+  grid-column: 6;
+}
+
+a{
+  color:black;
+  text-decoration: none;
+}
+.info-main{
+  padding: 5px;
+  background-color:rgba(255, 255, 255, 0.5);
+  margin: 5px;
+  margin-top: 0px;
+  border: solid 1px;
+  grid-row-start: 2;
+  grid-column: 1/4 ;
+}
+.info-main p{
+  margin: 0px;
+  text-indent: 25px;
+  font-size: 1.2em;
+}
+.infobox{
+  margin-top: 10px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding: 5px;
+  background-color:rgba(255, 255, 255, 0.5);
+  margin: 5px;
+}
+.infobox p{
+  margin: 0px;
+  text-indent: 25px;
+  font-size: 1.2em;
+}
+
+h3{
+  display:block;
+  background-color:rgba(255, 255, 255, 0.5);
+  padding: 0px;
+  padding-left: 5px;
+  margin: 5px;
+  font-weight: normal;
+}
+
+h2{
+  display:block;
+  background-color:rgba(255, 255, 255, 0.5);
+  padding: 0px;
+  padding-left: 5px;
+  margin: 5px;
+  font-weight: normal;
+  border:solid black 2px; 
+  font-size: 1.4em;
+}
+.infobox img{
+  padding: 5px;
+  width: 40%;
+  height: 60%;
+}
+.sidebar{
+  grid-column-start: 1;
+  background-color:hsla(0, 0%, 100%, 0.5);
+  margin: 5px;
+  display: grid;
+}
+.side-city{
+  grid-template-rows: repeat(9,1fr);
+  max-height: 450px;
+}
+.sidebar div{
+  margin: 5px;
+  background-color: rbga(0,0,0,0);
+  height: 45px;
+}
+.sidebar div:hover{
+  background: linear-gradient(180deg,rgba(83, 83, 83,0),rgba(0, 0, 0, 0.3));
+}
+.sidebar div{
+  margin: 5px;
+  margin-top: 0px;
+  font-size: 1.3em;
+}
+.sidebar div a{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.sidebar div a p{
+  margin: 0px;
+}
+.num0{
+  background-image:url(source\castle.jpg);
+  margin-top: 5px;
+  grid-row-start: 1;
+}
+.num0{
+  grid-row-start: 1;
+}
+.num1{
+  grid-row-start: 2;
+}
+.num2{
+  grid-row-start: 3;
+}
+.num3{
+  grid-row-start: 4;
+}
+.num4{
+  grid-row-start: 5;
+}
+.num5{
+  grid-row-start: 6;
+}
+.num6{
+  grid-row-start: 7;
+}
+.num7{
+  grid-row-start: 8;
+}
+.num8{
+  grid-row-start: 9;
+}
+.num9{
+  grid-row-start: 10;
+}
+.num10{
+  grid-row-start: 11;
+}
+.side-perk{
+  grid-template-rows: repeat(3,1fr);
+  max-height: 150px;
+}
+.secondary-perks{
+  font-size: 1.1em;
+  border: solid gray 2px;
+}
+.secondary-perks td{
+  margin: 5px;
+  border: solid gray 2px;
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
+.side-units{
+  grid-template-rows: repeat(10,1fr);
+  height: 500px;
+}
+.table-units{
+  font-size: 1.1em;
+  border: solid gray 2px;
+  width: 100%;
+}
+.table-units td{
+  border: solid gray 2px;
+}
+.td-img{
+  width: 68px;
+  height: 68px;
+  padding: 0px;
+}
+.td-img img{
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+.td-img-head{
+  font-size: 0.95em;
+}
+.table-heroes{
+  font-size: 1.1em;
+  border: solid gray 2px;
+  width: 100%;
+}
+.table-heroes td{
+  border: solid gray 2px;
+}
+.side-heroes{
+  grid-template-rows: repeat(9,1fr);
+  height: 450px;
+}
+.side-magic{
+  grid-template-rows: repeat(3,1fr);
+  height: 200px;
+}
+.table-magic{
+  font-size: 1.1em;
+  border: solid gray 2px;
+  width: 100%;
+}
+.table-magic td{
+  border: solid gray 2px;
+}
+.bg{
+  backdrop-filter: blur(3px);
+  background-attachment: fixed ;
+}
+.castle-bg{
+  background-image: url(../source/castle.jpg);
+}
+.citadel-bg{
+  background-image: url(../source/citadel.jpg);
+}
+.conflux-bg{
+  background-image: url(../source/conflux.jpg);
+}
+.dungeon-bg{
+  background-image: url(../source/dungeon.jpg);
+}
+.elfs-bg{
+  background-image: url(../source/elfs.jpg);
+}
+.inferno-bg{
+  background-image: url(../source/inferno.jpg);
+}
+.necropol-bg{
+  background-image: url(../source/necropol.jpg);
+}
+.swamp-bg{
+  background-image: url(../source/swamp.jpg);
+}
+.tower-bg{
+  background-image: url(../source/tower.jpg);
+}
+.wrapper-city img{
+  padding: 0px;
+  display: inline;
+  width: 100%;
+  height: auto;
+}
